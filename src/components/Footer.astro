@@ -9,16 +9,36 @@ const { href, title, body } = Astro.props;
 ---
 
 <main>
-
+	<div class="social side-bar"></div>
+	<div class="contact side-bar"></div>
+	<div class="qr side-bar"></div>
 </main>
 <style>
 	main{
 		margin 0;
 		padding: 0;
 		width: 100vw;
-		height: 5vh;
+		height: 20vh;
 		display: flex;
-		background: #fbff00;
+		background: #333;
+	}
+
+	.social{
+		width:50vw;
+	}
+
+	.contact{
+		width: 25vw;
+	}
+
+	.qr{
+		width: 25vw;
+	}
+
+	.side-bar{
+		align-self: center;
+		height: 80%;
+		border-left:  0.1rem solid #888;
 	}
 
 </style>

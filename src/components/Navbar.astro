@@ -9,25 +9,27 @@ const { href, title, body } = Astro.props;
 ---
 
 <main>
-	<div class="LOGO">
+	<!--<div class="LOGO">
 		<img src="img/logos/LOGO-512.png"/>
 	</div>
 	<li>
 		<ul>Catalogo</ul>
 		<ul>About</ul>
-	</li>
+	</li> -->
+	<div class="lego"><img src="favicon.ico"/></div>
 	<h1>DeleteSpots</h1>
-	<div class="search-bar">
+	<div class="lego inverted"><img src="favicon.ico"/></div>
+	<!--<div class="search-bar">
 		<input type="search" class="search-form" placeholder="Search"/>
 		<button class="search-button"><img src="img/icons/search.svg"/></button>
-	</div>
+	</div> -->
 </main>
 <style>
 	main{
 		margin 0;
 		padding: 0;
 		width: 100vw;
-		height: 5vh;
+		height: 6vh;
 		display: flex;
 		justify-content: center;
 		position: sticky;
@@ -54,7 +56,7 @@ const { href, title, body } = Astro.props;
 	h1{
 		margin: 0;
 		padding: 0;
-		width: 40vw;
+		width: 20vw;
 		height: 100%;
 		align-self: center;
 		text-align: center;
@@ -63,6 +65,21 @@ const { href, title, body } = Astro.props;
 		font-family: "Shadows Into Light", cursive;
 		font-weight: 400;
 		font-style: normal;
+	}
+
+	.lego{
+		margin: 0;
+		padding: 0;
+		width: 4rem;
+	}
+
+	.inverted{
+		scale: -1 1;
+	}
+
+	.lego > img{
+		width: 100%;
+		height: 100%;
 	}
 
 	h1:hover{

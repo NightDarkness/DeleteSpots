@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Item from '../components/Item.astro';
 import Player from '../components/Player.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Home">
@@ -13,19 +14,20 @@ import Player from '../components/Player.astro';
 		</div>
 		<div class="content">
 			<div class="row">
-				<Item title="Star Skull" img="img/shirt/WS-star-skull.jpg" price="$13"/>
-				<Item title="Green Astronaut Top" img="img/shirt/PS-green-lego-top.jpg" price="$25"/>
-				<Item title="Red Astronaut Top" img="img/shirt/PS-red-lego-top.jpg" price="$15"/>
-				<Item title="Red Astronaut" img="img/shirt/RS-red-lego.jpg" price="$12"/>
+				<Item img="img/shirt/WS-star-skull.jpg" price="$13"/>
+				<Item img="img/shirt/PS-green-lego-top.jpg" price="$25"/>
+				<Item img="img/shirt/PS-red-lego-top.jpg" price="$15"/>
+				<Item img="img/shirt/RS-red-lego.jpg" price="$12"/>
 			</div>
 			<div class="row">
-				<Item title="Skull" img="img/shirt/WS-blue-skull.JPEG" price="$23"/>
-				<Item title="Flowie man" img="img/shirt/WS-flower-man.jpg" price="$15"/>
-				<Item title="Doom" img="img/shirt/WS-red-doom.JPG" price="$12"/>
-				<Item title="Doom" img="img/shirt/WS-red-doom.JPG" price="$27"/>
+				<Item img="img/shirt/WS-blue-skull.JPEG" price="$23"/>
+				<Item img="img/shirt/WS-flower-man.jpg" price="$15"/>
+				<Item img="img/shirt/WS-red-doom.JPG" price="$12"/>
+				<Item img="img/shirt/WS-red-doom.JPG" price="$27"/>
 			</div>
 			
 		</div>
+		<Footer/>
 	</main>
 </Layout>
 

@@ -1,46 +1,50 @@
 ---
 interface Props {
-    title: string;
 	img: string;
 	price: string;
 }
 
-const { title, img, price } = Astro.props;
+const { img, price } = Astro.props;
 ---
 
 <main class="item">
     <div class="item-image">
 		<img src={img}/>
 	</div>
-    <div class="item-description">
-        <div class="item-title">{title}</div>
-        <div class="item-price">{price}</div>
+    <div class="item-price">
+        {price}
     </div>
 </main>
 <style>
 	.item{
 		margin: auto;
 		padding: 0;
-		width: 20%;
-		height: 90%;
+		width: 15vw;
+		height: 15vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-self: center;
 
-		border:1px solid black;
+		box-shadow: -10px 10px 7px 0px #666;
 		border-radius: 7px;
 
 		/*TEMPORAL*/
 		background-color: #eee;
 	}
 
+	.item:hover{
+		cursor: pointer;
+	}
+
 	.item-image{
 		margin: auto;
 		padding: 0;
-		width: 95%;
-		height: 77%;
+		width: 100%;
+		height: 100%;
 		justify-content: center;
+		overflow: hidden;
+		border-radius: 7px;
 		/*TEMPORAL8*/
 		background-color: gray;
 
@@ -50,32 +54,34 @@ const { title, img, price } = Astro.props;
 		margin: 0;
 		padding: 0;
 		width:100%;
+		height: 100%;
 		overflow: hidden;
 		object-fit: cover;
 	}
 
-	.item-description{
-		margin: 0;
-		padding: 0;
-		width: 100%;
+	.item-price{
+		width: 15vw;
+		height: 15vw;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.item-title{
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		height: 55%;
-		text-align: center;
-
-		font-family: "Poppins", sans-serif;
-		font-weight: 500;
+		justify-content: flex-end;
+		text-align: left;
+		text-indent: 5px;
+		position: absolute;
+		opacity: 0;
+		color: #eee;
+		font-family: "Rubik Mono One", monospace;
+		font-weight: 400;
 		font-style: normal;
-	}
-
-	.item-price{
 		
 	}
+
+	.item:hover{
+		.item-price{
+			opacity: 1;
+		}
+	}
+
+	
 	
 </style>
