@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "deletespots",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,5 +11,10 @@
   },
   "dependencies": {
     "astro": "^4.11.3"
-  }
+  },
+  "description": "```sh\r npm create astro@latest -- --template basics\r ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
