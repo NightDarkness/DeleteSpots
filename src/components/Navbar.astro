@@ -1,0 +1,133 @@
+---
+/* interface Props {
+	title: string;
+	body: string;
+	href: string;
+} */
+
+const { href, title, body } = Astro.props;
+---
+
+<main>
+	<div class="LOGO">
+		<img src="img/logos/LOGO-512.png"/>
+	</div>
+	<li>
+		<ul>Catalogo</ul>
+		<ul>About</ul>
+	</li>
+	<h1>DeleteSpots</h1>
+	<div class="search-bar">
+		<input type="search" class="search-form" placeholder="Search"/>
+		<button class="search-button"><img src="img/icons/search.svg"/></button>
+	</div>
+</main>
+<style>
+	main{
+		margin 0;
+		padding: 0;
+		width: 100vw;
+		height: 5vh;
+		display: flex;
+		justify-content: center;
+		background: #ffcc00;
+	}
+
+	li{
+		margin: 0;
+		padding: 1vh 1vh 1vh 0;
+		width: 30vw;
+		display: flex;
+		align-self: center;
+
+		color: rgb(255, 255, 255);
+		font-weight: 500;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0 4vh 0 0;
+	}
+
+	h1{
+		margin: 0;
+		padding: 0;
+		width: 40vw;
+		height: 100%;
+		align-self: center;
+		text-align: center;
+		align-content: center;
+
+		font-family: "Shadows Into Light", cursive;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	h1:hover{
+		cursor: pointer;
+	}
+
+	.LOGO{
+		margin: 0 1vh 0 1vh;
+		padding: 0;
+		height: 80%;
+		width: calc(height);
+		align-self: center;
+		background-color: black;
+		border-radius: 1000%;
+	}
+
+	.LOGO > img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+	.search-bar{
+		margin: 0;
+		padding: 0 2rem 0 0;
+		width: 30vw;
+		display: flex;
+		justify-content: end;
+	
+	}
+
+	input{
+		margin: 0;
+		padding: 0;
+		height: 70%;
+		align-self: center;
+		border-radius: 10px 0 0 10px;
+		border: none;
+		text-indent: 10px;
+		
+	}
+
+	button:hover{
+		cursor:pointer;
+	}
+
+	.search-button{
+		margin: 0;
+		padding: 0;
+		width: 3rem;
+		height: 70%;
+		align-self: center;
+		background-color: #fff;
+		border-radius: 0 10px 10px 0;
+		border: none;
+		border-left: 1px solid gray;
+	}
+
+	.search-button > img{
+		margin: 0;
+		padding: 0;
+		width: 80%;
+		height: 80%;
+
+	}
+
+</style>

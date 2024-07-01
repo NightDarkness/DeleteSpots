@@ -1,0 +1,19 @@
+---
+interface Props {
+    video: string;
+}
+
+const { video } = Astro.props;
+---
+
+<video src={video} autoplay muted loop>
+    your browser is not compatible with video players
+</video>
+
+<style>
+    video{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+</style>

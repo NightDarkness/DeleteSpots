@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Item from '../components/Item.astro';
+import Player from '../components/Player.astro';
+---
+
+<Layout title="Home">
+	<main>
+		<Navbar/>
+		<div class="carousel">
+			<Player video="video/vid-01.mov"/>
+		</div>
+		<div class="content">
+			<div class="row">
+				<Item title="Star Skull" img="img/shirt/WS-star-skull.jpg" price="$13"/>
+				<Item title="Green Astronaut Top" img="img/shirt/PS-green-lego-top.jpg" price="$25"/>
+				<Item title="Red Astronaut Top" img="img/shirt/PS-red-lego-top.jpg" price="$15"/>
+				<Item title="Red Astronaut" img="img/shirt/RS-red-lego.jpg" price="$12"/>
+			</div>
+			<div class="row">
+				<Item title="Skull" img="img/shirt/WS-blue-skull.JPEG" price="$23"/>
+				<Item title="Flowie man" img="img/shirt/WS-flower-man.jpg" price="$15"/>
+				<Item title="Doom" img="img/shirt/WS-red-doom.JPG" price="$12"/>
+				<Item title="Doom" img="img/shirt/WS-red-doom.JPG" price="$27"/>
+			</div>
+			
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main{
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel{
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 60vh;
+		background-color: #ccc;
+	}
+
+	.content{
+		margin:0;
+		padding: 0;
+		width: 100vw;
+		min-height: 40vh;
+
+		/*TEMPORAL*/
+		background-color: #eee;
+
+	}
+
+	.row{
+		margin: 0;
+		padding: 0;
+		width: 100wv;
+		height: 30vh;
+		display: flex;
+		
+	}
+	
+</style>
